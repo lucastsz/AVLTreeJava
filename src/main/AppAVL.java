@@ -1,14 +1,12 @@
-package arvoreAVL.app;
+package main;
 
-import arvoreAVL.ArvoreAvl;
-import arvoreAVL.ArvoreBinaria;
+import model.ArvoreAvl;
 
 
 public class AppAVL {
 
     public static void main(String[] args) {
         ArvoreAvl avl = new ArvoreAvl();
-        ArvoreBinaria ab = new ArvoreBinaria();
 
         /*
 --------------------------------------------------------------------------------

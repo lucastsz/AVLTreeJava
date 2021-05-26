@@ -1,4 +1,6 @@
-package arvoreAVL;
+package model;
+
+import util.Impressao;
 
 
 public class ArvoreAvl {
@@ -250,7 +252,7 @@ public class ArvoreAvl {
 
  public void imprimir() {
 
-          TreePrinter<No> p = new TreePrinter<>(n -> n.dado + "", n -> n.esquerdo, n -> n.direito);
+          Impressao<No> p = new Impressao<>(n -> n.dado + "", n -> n.esquerdo, n -> n.direito);
           p.setSquareBranches(false);
           p.printTree(raiz);
 

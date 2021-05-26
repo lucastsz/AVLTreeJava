@@ -248,9 +248,11 @@ public class ArvoreAvl {
         }
     }
 
-    public void imprimirCorreto() {
+ public void imprimir() {
 
-        Impressao.printNode(raiz);
+          TreePrinter<No> p = new TreePrinter<>(n -> n.dado + "", n -> n.esquerdo, n -> n.direito);
+          p.setSquareBranches(false);
+          p.printTree(raiz);
 
     }
 

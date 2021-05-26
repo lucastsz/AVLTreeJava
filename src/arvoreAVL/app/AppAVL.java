@@ -1,12 +1,14 @@
 package arvoreAVL.app;
 
 import arvoreAVL.ArvoreAvl;
+import arvoreAVL.ArvoreBinaria;
 
 
 public class AppAVL {
 
     public static void main(String[] args) {
         ArvoreAvl avl = new ArvoreAvl();
+        ArvoreBinaria ab = new ArvoreBinaria();
 
         /*
 --------------------------------------------------------------------------------
@@ -117,7 +119,33 @@ FASE 2
         avl.imprimirCorreto();
         
          */
+   
+
+          //AVL
+        avl.inserir(1);
+        avl.inserir(2);
+        avl.inserir(3);
+        avl.inserir(4);
+        avl.inserir(5);
+        avl.inserir(6);
+        avl.inserir(7);
+        System.out.println("AVL:");
+        avl.imprimir();
         
+        
+        avl.exclusao(4);
+        
+        System.out.println("AVL:");
+        avl.imprimir();
+        
+              //CONSULTA
+        int dado = 6;
+        if (avl.buscar(dado) == null) {
+            System.out.println("NÃO EXISTE ESSE REGISTRO");
+        } else {
+            System.out.println(avl.buscar(dado));
+        }
+ 
     }
 
 }

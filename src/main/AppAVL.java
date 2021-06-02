@@ -117,20 +117,34 @@ FASE 2
         avl.imprimirCorreto();
         
          */
-   
+
 
           //AVL
-        avl.inserir(1);
-        avl.inserir(2);
-        avl.inserir(3);
-        avl.inserir(4);
-        avl.inserir(5);
-        avl.inserir(6);
-        avl.inserir(7);
+        avl.inserir(20);
+        avl.inserir(15);
+        avl.inserir(25);
+        avl.inserir(12);
+        avl.inserir(17);
+        avl.inserir(24);
+        avl.inserir(30);
+        avl.inserir(10);
+        avl.inserir(14);
+        avl.inserir(13);
         System.out.println("AVL:");
         avl.imprimir();
         
+        System.out.println("\n");
+        System.out.println("        20      ");
+        System.out.println("       / \\      ");
+        System.out.println("      /   \\     ");
+        System.out.println("     /     \\    ");
+        System.out.println("    14      25  ");
+        System.out.println("   / \\     / \\  ");
+        System.out.println("  12  15  24  30");
+        System.out.println(" / \\   \\        ");
+        System.out.println("10  13  17      ");
         
+        /*
         avl.exclusao(4);
         
         System.out.println("AVL:");
@@ -143,7 +157,7 @@ FASE 2
         } else {
             System.out.println(avl.buscar(dado));
         }
- 
+        */
     }
 
 }
